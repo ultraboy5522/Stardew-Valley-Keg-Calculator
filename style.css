@@ -1,0 +1,14 @@
+body { /* Super Simple CSS (TM) */
+    font-family: system-ui, sans-serif;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+input, button {
+    padding: 8px;
+    font-size: 1rem;
+    margin-right: 8px;
+}
