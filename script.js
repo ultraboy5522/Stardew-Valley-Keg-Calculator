@@ -27,7 +27,8 @@ submitBtn.addEventListener("click", () => {
     const coalTotal = numberNeeded * coalNeeded;
     const coalTotalCost = coalTotal * coalCost;
     const finalCost = woodTotalCost + ironTotalCost + copperTotalCost + coalTotalCost;
-    const profit = numberNeeded * 1650
+    const profitAncient = numberNeeded * 1650
+    const profitStar = numberNeeded * 2250
 
     calculation.innerHTML = `
         <h3>Materials Needed:</h3>
@@ -36,8 +37,8 @@ submitBtn.addEventListener("click", () => {
         <p>Copper Ore: ${copperTotal.toLocaleString()} (${copperTotalCost.toLocaleString()}g)</p>
         <p>Coal: ${coalTotal.toLocaleString()} (${coalTotalCost.toLocaleString()}g)</p>
         <p>Total cost: ${finalCost.toLocaleString()}g</p>
-        <p>Gold Made (1 Week): ${profit.toLocaleString()}g, or ${(profit + (profit * 0.4)).toLocaleString()}g if you're an artisan</p>
-        <sub>(Gold made stat assumes use of ancient fruit)</sub>
+        <p>Gold Made - Ancient Fruit (1 Week): ${profitAncient.toLocaleString()}g, or ${(profitAncient + (profitAncient * 0.4)).toLocaleString()}g if you're an artisan</p>
+        <p>Gold Made - Starfruit (1 Week): ${profitStar.toLocaleString()}g, or ${(profitStar + (profitStar * 0.4)).toLocaleString()}g if you're an artisan</p>
     `;
 }
 });
